@@ -1,0 +1,112 @@
+.about{
+
+    min-height: calc(100vh - 150px);
+}
+
+
+footer {
+    position: relative;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    display: block;
+
+}
+
+.contacts{
+    position: absolute;
+    left: 10px;
+}
+
+.contacts p{
+
+    margin: 5% 0 2% 5%;
+
+}
+.social a{
+    width: 50%;
+}
+
+.social img{
+    margin: auto;
+    background-color: white;
+    border: solid white;
+    position: absolute;
+    bottom: 25%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+
+}
+
+.social img:hover{
+
+    background-color: #007bff;
+    border: solid #007bff;
+}
+
+#footer1{
+    right: 20%;
+}
+#footer2{
+    right: 16%;
+}
+#footer3{
+    right: 12%;
+}
+#footer4{
+    right: 8%;
+}
+
+@media screen and (max-width: 600px) {
+    .social img{
+        bottom: 35%;
+        width: 1vw ;
+    }
+}
+
+@media (min-width: 600px) {
+    .social img{
+        width: 2%;
+    }
+}
+
+/*Buttom to page up*/
+
+
+#myBtn {
+    height: 6vw;
+    width: 6vw;
+    content: "^";
+    vertical-align: top;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 4%; /* Place the button at the bottom of the page */
+    right: 3%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid black; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    transition-duration: 0.5s;
+
+}
+
+#myBtn:hover {
+    background-color: #007bff;
+}
+
+.pageUp{
+    margin: auto;
+    padding: auto;
+    width: 4%;
+    bottom: 6%; /* Place the button at the bottom of the page */
+    right: 4%;
+    position: fixed;
+}

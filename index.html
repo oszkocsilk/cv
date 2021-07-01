@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oszkocsil Krisztián</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="HomeNavbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">Oszkocsil Krisztián</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+        <div class="banner"></div>
+        <div class="about">
+            <div class="content">
+                <div class="title">Welcome to my page!</div>
+                <p></p>
+                <h2>My name is Krisztián Oszkocsil and I want to show myself in this website for you.</h2>
+                <p></p>
+                <h3>If you want to know something formal from me, you have to click on the "About me" tag on the navbar.</h3>
+                <p></p>
+                <h3>You can see my projects in different languages and in softwares by clicking on "Projects" tab in the navbar.</h3>
+                <p></p>
+                <h3>If you are interestid in my hobbies, go to the "Hobbies" tag.</h3>
+                <p></p>
+                <h3>The "Experiences" tag will navigate you to a page, where I wrote down what i did yet.</h3>
+                <p></p>
+                <h3>You can come back to this page by clicking on my name or on the "Home" button.</h3>
+                <p></p>
+                <h3>Last, but not least you can make contact with me whith in the platforms linked below, or in phone with the given number.</h3>
+                <p></p>
+                <h4>If you scroll down, you can go up with a Page Up button at the rigth buttom corner.</h4>
+                <p></p>
+                <p>The webpage contains:</p>
+                <p> Sticky Navigation Menu Bar on Scroll with hamburger menü, hover effects, page up button, gallery, footer etc.</p>
+              </div>
+        </div>
+        <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/up.png" class="pageUp"> </button>
+
+    <footer>
+        <div class="contacts">
+            <p>oszkocsilk@gmail.com</p>
+            <p>+36/70 273 5000</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/oszkocsilk.gfhgh"><img src="Images/linktree/facebook.png" id="footer1"></a>
+            <a href="https://www.instagram.com/oszkocsil/"><img src="Images/linktree/instagram.png"  id="footer2"></a>
+            <a href="https://github.com/oszkocsilk"><img src="Images/linktree/github.png"  id="footer3"></a>
+            <a href="https://www.linkedin.com/in/kriszti%C3%A1n-oszkocsil-11b31913a/"><img src="Images/linktree/linkedin.png"  id="footer4"></a>
+        </div>
+    </footer>
+</body>
+</html>

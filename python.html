@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oszkocsil Krisztián</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="content">
+        <div class="logo">
+            <a href="#">Oszkocsil Krisztián</a>
+        </div>
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+
+<div class="banner2"></div>
+<div class="about">
+    <div class="content">
+        <div class="title">My Python projects</div>
+
+        <div class="row">
+            <div class="column">
+                <img src="Images/python/alcatraz.py.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/anagramma.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/aoc.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/BinDec_pal.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/python/bs_gen.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/bullshit.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/dict1.png" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/ekezet.png" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Images/python/feladat1.py.png" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/feladat1.py_feladat1.py.png" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/feladat2.py.png" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="Images/python/feladat3.py.png" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="Images/python/alcatraz.py.png" >
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/anagramma.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/aoc.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/BinDec_pal.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/bs_gen.png" >
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/bullshit.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/dict1.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/ekezet.png">
+                </div>
+                <div class="mySlides">
+                    <img src="Images/python/feladat1.py.png" >
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/feladat1.py_feladat1.py.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/feladat2.py.png">
+                </div>
+
+                <div class="mySlides">
+                    <img src="Images/python/feladat3.py.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/alcatraz.py.png" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/anagramma.png" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/aoc.png" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/BinDec_pal.png" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/bs_gen.png" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/bullshit.png" onclick="currentSlide(6)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/dict1.png" onclick="currentSlide(7)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/ekezet.png" onclick="currentSlide(8)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/feladat1.py.png" onclick="currentSlide(9)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/feladat1.py_feladat1.py.png" onclick="currentSlide(10)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/feladat2.py.png" onclick="currentSlide(11)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/python/feladat3.py.png" onclick="currentSlide(12)">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/up.png" class="pageUp"> </button>
+
+<footer>
+    <div class="contacts">
+        <p>oszkocsilk@gmail.com</p>
+        <p>+36/70 273 5000</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/oszkocsilk.gfhgh"><img src="Images/linktree/facebook.png" id="footer1"></a>
+        <a href="https://www.instagram.com/oszkocsil/"><img src="Images/linktree/instagram.png"  id="footer2"></a>
+        <a href="https://github.com/oszkocsilk"><img src="Images/linktree/github.png"  id="footer3"></a>
+        <a href="https://www.linkedin.com/in/kriszti%C3%A1n-oszkocsil-11b31913a/"><img src="Images/linktree/linkedin.png"  id="footer4"></a>
+    </div>
+</footer>
+</body>
+</html>

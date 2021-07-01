@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oszkocsil Krisztián</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="experiences.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">Oszkocsil Krisztián</a>
+        </div>
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="#">Experiences</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="about">
+    <div class="title" style="position: absolute;top: 100px;margin: 1% 11%">Work experiences</div>
+    <div class="content" style="margin-top: 50px; margin-bottom: 177px;">
+        <div class="row">
+            <div class="col-sm-5" style="width: 50%">
+                <div class="card" >
+                    <img src="Images/everit.png" style="width: 18%; margin-left:42%;">
+                    <h2>Everit</h2>
+                    <h4 >Js project</h4>
+                    <p>2020 september - december</p>
+                    <p style=" text-align: left;">During my professional parctice,
+                        i had to write a domain based checking
+                        and validation system for Google Drive.
+                        I wrote it in JavaScript language in the
+                        Google SpreadSheet's coding platform.</p>
+                    <a href="javascript.html" style="text-decoration: none; color: blue; margin-top: 10px;text-align: left;">Link and more information about the code here</a>
+                </div>
+
+            </div>
+            <div class="col-sm-5" style="width: 50%">
+                <div class="card" >
+
+                    <div class="column">
+                        <div class="col-md-5" >
+                            <img src="Images/fag.png" style="width:100%; margin-left:190%;">
+                        </div>
+                        <div class="col-md-5" style="width: 450%;">
+                            <p/>
+                            <h4>Schaeffler FAG Debrecen</h4>
+                            <h6>IT Support</h6>
+                            <a href="https://www.schaeffler.hu/content.schaeffler.hu/hu/index.jsp">www.schaeffler.hu</a>
+                            <p>2018 april - september</p>
+                            <p>Main tasks:</p>
+                            <p style=" text-align: left;">Software and hardware backup; problem solving;
+                                mailing system handling; modifying authority;
+                                installing, maintenancing programs and operation systems;
+                                configurating, maintenancing networks; register in-use devices;
+                                using ticket system; changing devices; putting into operation devices, programs.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/up.png" class="pageUp"> </button>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+<script>//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<footer>
+    <div class="contacts">
+        <p>oszkocsilk@gmail.com</p>
+        <p>+36/70 273 5000</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/oszkocsilk.gfhgh"><img src="Images/linktree/facebook.png" id="footer1"></a>
+        <a href="https://www.instagram.com/oszkocsil/"><img src="Images/linktree/instagram.png"  id="footer2"></a>
+        <a href="https://github.com/oszkocsilk"><img src="Images/linktree/github.png"  id="footer3"></a>
+        <a href="https://www.linkedin.com/in/kriszti%C3%A1n-oszkocsil-11b31913a/"><img src="Images/linktree/linkedin.png"  id="footer4"></a>
+    </div>
+</footer>
+</body>
+</html>

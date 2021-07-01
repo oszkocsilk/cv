@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oszkocsil Krisztián</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="content">
+        <div class="logo">
+            <a href="index.html">Oszkocsil Krisztián</a>
+        </div>
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+
+<div class="banner2"></div>
+<div class="about">
+    <div class="container-fluid">
+        <h1 style="margin-left: 2%">My JavaScript Projects</h1>
+        <div class="row">
+
+            <div class="col-sm-4" style="width: 90%; margin-left: 5%;">
+
+                <H3>Description</H3>
+                <p>
+                    Szakmai gyakorlatom során egy fejlesztési feladatot kaptam, melyben betekintést nyerhettem a Google által JavaScript nyelven használt Google Apps Script fejlesztő környezetébe. Ebben a környezetben tanultam meg használni a Cloud kapcsolatok egy részét, mellyel lehetőségem nyílt egy olyan alkalmazás létrehozására, melyet a Google táblázatkezelő alkalmazásába, a Spreadsheet-be integrálva egy új menüpont alatt tudtam futtatni.
+                </p>
+                <p>
+                    A feladat egy google spreadsheet addon megírása volt (Google App Script = JavaScript nyelven). Egy angol nyelvű változókkal és kommentekkel dolgozó programot hoztam létre egy szintén angol nyelvű spreadsheet munkalaphoz csatolva. Az alkalmazás tárol egy listát megbízható domainekről, fejlécben egy “Valid domains “és egy “Comment “oszloppal, a többi oszlopra nincs szükség, ezért törölve lettek, emellett 10 domainnek lett hely hagyva, a további sorokra jelenleg szintén nincs szükség.
+                </p>
+                <p>
+                    A script végig iterálja a Google folder-t és megnézi a mappák megosztásait, azokon egyesével minden felhasználót, akinek van szerkesztési joga, leellenőrzi, hogy a domainje benne van-e a megbízhatóak között. Amennyiben nincs benne, eltárolja egy listában, két másik listában pedig a mappa nevét, illetve linkjét menti le. Egy másik esetben, melyet a menü második pontjával érünk el, a mappák mellett ugyan ezt végrehajtja az összes fájl esetében is.
+                </p>
+                <p>
+                    Amint elindítom a spreadsheet alkalmazást egy menün keresztül elérem, hogy lefut a script és kiírja egy új munkalapra (“invalid users“) az invalid domainnel rendelkező email címeket, melléjük pedig a hozzájuk tartozó fájl/mappa nevét. Ezekhez egy hiperlinken keresztül hozzáférést kapunk a nevükre kattintva. Ezekből egy új munkalapon “Pivot table “néven létrehoz egy pivot táblát, melyben az email címek csoportosításával átláthatóbbak az adatok.
+                </p>
+                <p>
+                    A menüben lévő gomb alatt három funkció kapott helyet. Az első csak a mappákat vizsgálja és a hozzá tartozó felhasználót, illetve a mappa nevét mutatva listázza ki, hivatkozva a fájl helyére. A második a mappákat és a fájlokat is szemügyre veszi és listázza ki hasonló módon. A harmadik egy help funkció, melyben nagyvonalakban elmagyarázom az addon funkcióit.
+                </p>
+                <p>
+                    A fejlesztés során folyamatosan konzultáltam a gyakorlatom vezetőjével, sok szakmai tanácsot és fejlesztési ötletet kaptam tőle, amiért nagyon hálás vagyok.
+                </p>
+                <p style="padding-bottom: 10px;">
+                    Link:
+                    <a href="https://github.com/oszkocsilk/domainChecker" >
+                        https://github.com/oszkocsilk/domainChecker
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Images/up.png" class="pageUp"> </button>
+<footer>
+    <div class="contacts">
+        <p>oszkocsilk@gmail.com</p>
+        <p>+36/70 273 5000</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/oszkocsilk.gfhgh"><img src="Images/linktree/facebook.png" id="footer1"></a>
+        <a href="https://www.instagram.com/oszkocsil/"><img src="Images/linktree/instagram.png"  id="footer2"></a>
+        <a href="https://github.com/oszkocsilk"><img src="Images/linktree/github.png"  id="footer3"></a>
+        <a href="https://www.linkedin.com/in/kriszti%C3%A1n-oszkocsil-11b31913a/"><img src="Images/linktree/linkedin.png"  id="footer4"></a>
+    </div>
+</footer>
+</body>
+</html>

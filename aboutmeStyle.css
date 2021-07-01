@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.col-sm-5{
+   display: block;
+   position: relative;
+   width: 40%;
+   min-height: 5px;
+   padding-right: 15px;
+ }
+.col-sm-7{
+  display: block;
+  position: relative;
+  width: 60%;
+  min-height: 5px;
+  padding-right: 15px;
+
+}
+.card {
+    top: 100px;
+    position: relative;
+    flex-direction: column;
+    min-width:0;
+  display:flex;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 20px;
+  background-color: #fafafa;
+  color: black;
+  margin-bottom:20px;
+
+}
+
+
+ #profile_picture{
+ display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 20%;
+   padding-bottom: 25px;
+   }
+
+.linktree{
+    width:6%;
+    margin:0 10px;
+    transition-duration: 0.5s;
+    border-radius: 8px;
+
+}
+
+.linktree:hover{
+
+    background-color: #007bff;
+
+}
+#placemarker{
+    width: 5%;
+    margin-left: 5px;
+
+}
+
+h4, h5 {
+
+    margin: 10px 0;
+
+}
+
+.company{
+    margin-left: 16%;
+    width: 12%;
+
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
