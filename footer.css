@@ -36,10 +36,10 @@ footer {
     background-color: white;
     border: solid white;
     position: absolute;
-    bottom: 25%;
+    bottom: 40%;
     border-radius: 10px;
     transition-duration: 0.5s;
-
+    width: 1rem;
 }
 
 .social img:hover{
@@ -61,31 +61,52 @@ footer {
     right: 8%;
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 350px) {
+    #footer1{
+        right: 40%;
+    }
+    #footer2{
+        right: 30%;
+    }
+    #footer3{
+        right: 20%;
+    }
+    #footer4{
+        right: 10%;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer{
+        width: 120%;
+    }
+}
+@media screen and (max-width: 300px) {
+    footer{
+        width: 140%;
+    }
+}
+@media screen and (min-width: 1100px) {
     .social img{
-        bottom: 35%;
-        width: 1vw ;
+        bottom: 30%;
+        width: 25px;
     }
 }
 
-@media (min-width: 600px) {
-    .social img{
-        width: 2%;
-    }
-}
 
 /*Buttom to page up*/
 
 
 #myBtn {
-    height: 6vw;
-    width: 6vw;
+    height: 3rem;
+    width: 3rem;
     content: "^";
     vertical-align: top;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 4%; /* Place the button at the bottom of the page */
-    right: 3%; /* Place the button 30px from the right */
+    bottom: 3rem; /* Place the button at the bottom of the page */
+    right: 3rem; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
@@ -105,8 +126,8 @@ footer {
 .pageUp{
     margin: auto;
     padding: auto;
-    width: 4%;
-    bottom: 6%; /* Place the button at the bottom of the page */
-    right: 4%;
+    width: 1rem;
+    bottom: 4rem; /* Place the button at the bottom of the page */
+    right: 4rem;
     position: fixed;
 }
