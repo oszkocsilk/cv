@@ -66,25 +66,48 @@ footer {
 
 @media screen and (max-width: 450px) {
     #footer1{
-        right: 40%;
+        right: 50%;
     }
     #footer2{
-        right: 30%;
+        right: 36%;
     }
     #footer3{
-        right: 20%;
+        right: 22%;
     }
     #footer4{
-        right: 10%;
+        right: 8%;
+    }
+    .social img{
+        width: 2rem;
+        bottom: 20%;
     }
 }
-
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     .social img{
         bottom: 30%;
         width: 25px;
     }
 }
+@media screen and (max-width: 1000px) {
+    #footer1{
+        right: 32%;
+    }
+    #footer2{
+        right:24%;
+    }
+    #footer3{
+        right: 16%;
+    }
+    #footer4{
+        right: 8%;
+    }
+    .social img{
+        width: 2em;
+        bottom: 30%;
+    }
+}
+
+
 
 
 /*Buttom to page up*/
