@@ -65,24 +65,7 @@ footer {
 
 
 
-@media screen and (max-width: 450px) {
-    #footer1{
-        right: 50%;
-    }
-    #footer2{
-        right: 36%;
-    }
-    #footer3{
-        right: 22%;
-    }
-    #footer4{
-        right: 8%;
-    }
-    .social img{
-        width: 2rem;
-        bottom: 20%;
-    }
-}
+
 @media screen and (min-width: 1000px) {
     .social img{
         bottom: 30%;
@@ -107,7 +90,24 @@ footer {
         bottom: 30%;
     }
 }
-
+@media screen and (max-width: 450px) {
+    #footer1{
+        right: 50%;
+    }
+    #footer2{
+        right: 36%;
+    }
+    #footer3{
+        right: 22%;
+    }
+    #footer4{
+        right: 8%;
+    }
+    .social img{
+        width: 2rem;
+        bottom: 20%;
+    }
+}
 
 
 

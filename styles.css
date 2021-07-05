@@ -11,9 +11,13 @@ body {
   float: left;
   width: 25%;
   padding: 0 10px;
+  
 }
 
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+  
+}
 
 .row:after {
   content: "";
@@ -22,6 +26,8 @@ body {
 }
 
 .card {
+  min-width: 205px;
+  min-height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   margin-bottom: 20px;
@@ -30,13 +36,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
 
 .card:hover{
     transform: scale(1.1);
@@ -46,3 +46,35 @@ body {
 img{
 width:50%;
 }
+@media screen and (max-width: 1230px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media screen and (min-width: 99px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .row{
+    margin: 0;
+  }
+}
+@media screen and (min-width: 510px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .row{
+    margin: 0;
+  }
+}
+
+

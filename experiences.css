@@ -66,14 +66,29 @@
   .content{
     padding: 0 20px;
   }
+  .col-sm-5{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (max-width: 520px) {
-  .title{
-    top: 150px;
-
+@media (max-width: 639px) {
+  .content{
+    padding: 0 20px;
   }
   .col-sm-5{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .title{
+    margin: auto;
+
+  }
+  .col-sm-5:first-child{
     padding-top: 50px;
   }
 
